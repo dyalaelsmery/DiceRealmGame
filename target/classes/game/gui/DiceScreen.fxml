@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.DiceScreenController">
+   <children>
+      <ImageView fx:id="backGround" fitHeight="700.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/DiceScreen.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Player_1_flag" fitHeight="514.0" fitWidth="230.0" layoutX="-5.0" opacity="0.9" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/ActivePlayerFlag.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Player_2_flag" fitHeight="514.0" fitWidth="230.0" layoutX="676.0" opacity="0.9" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/PassivePlayerFlag.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Player_1_name" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="9.0" prefHeight="35.0" prefWidth="215.0" text="Player Name" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="Player_1_status" layoutX="33.0" layoutY="45.0" text="Status: Active">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Player_1_arcane" fitHeight="53.0" fitWidth="64.0" layoutX="26.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/ArcaneBoost.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Player_1_crest" fitHeight="53.0" fitWidth="64.0" layoutX="26.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/ElementalCrest.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Player_1_timewarp" fitHeight="53.0" fitWidth="64.0" layoutX="26.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Player_1_ArcaneCount" layoutX="94.0" layoutY="84.0" text="X0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Player_1_CrestCount" layoutX="94.0" layoutY="296.0" text="X0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Player_1_TimeWarpCount" layoutX="94.0" layoutY="190.0" text="X0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Player_2_name" alignment="CENTER" contentDisplay="CENTER" layoutX="684.0" layoutY="9.0" prefHeight="35.0" prefWidth="215.0" text="Player Name" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="Player_2_status" layoutX="719.0" layoutY="45.0" text="Status: Passive">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Player_2_arcane" fitHeight="53.0" fitWidth="64.0" layoutX="705.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/ArcaneBoost.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Player_2_crest" fitHeight="53.0" fitWidth="64.0" layoutX="705.0" layoutY="282.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/ElementalCrest.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Player_2_timewarp" fitHeight="53.0" fitWidth="64.0" layoutX="705.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Player_2_ArcaneCount" layoutX="782.0" layoutY="84.0" text="X0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Player_2_CrestCount" layoutX="782.0" layoutY="298.0" text="X0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Player_2_TimeWarpCount" layoutX="782.0" layoutY="192.0" text="X0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="RollDiceButton" layoutX="219.0" layoutY="628.0" mnemonicParsing="false" onAction="#rollDice" opacity="0.9" prefHeight="53.0" prefWidth="138.0" text="Roll Dice" />
+      <Button fx:id="ToggleDiceView" layoutX="534.0" layoutY="628.0" mnemonicParsing="false" onAction="#ToggleDiceView" opacity="0.9" prefHeight="53.0" prefWidth="138.0" text="Show Forgotten Dice" />
+      <ImageView fx:id="View_Dice_1" fitHeight="75.0" fitWidth="75.0" layoutX="276.0" layoutY="385.0" onMouseClicked="#attack" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/DiceImages/WHITE1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="View_Dice_2" fitHeight="75.0" fitWidth="75.0" layoutX="401.0" layoutY="385.0" onMouseClicked="#attack" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/DiceImages/WHITE1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="View_Dice_3" fitHeight="75.0" fitWidth="75.0" layoutX="521.0" layoutY="385.0" onMouseClicked="#attack" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/DiceImages/WHITE1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="View_Dice_4" fitHeight="75.0" fitWidth="75.0" layoutX="275.0" layoutY="499.0" onMouseClicked="#attack" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/DiceImages/WHITE1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="View_Dice_5" fitHeight="75.0" fitWidth="75.0" layoutX="400.0" layoutY="499.0" onMouseClicked="#attack" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/DiceImages/WHITE1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="View_Dice_6" fitHeight="75.0" fitWidth="75.0" layoutX="520.0" layoutY="499.0" onMouseClicked="#attack" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/DiceImages/WHITE1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="System_Message" alignment="CENTER" contentDisplay="CENTER" layoutX="199.0" layoutY="55.0" opacity="0.9" prefHeight="146.0" prefWidth="501.0" text="System Message " textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="RoundNum" layoutX="255.0" layoutY="6.0" text="Round:1" textFill="#ffa8a8">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="TurnNum" layoutX="546.0" layoutY="6.0" text="Turn:1" textFill="#afd2ff">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Player_1_Time_yes" fitHeight="35.0" fitWidth="40.0" layoutX="32.0" layoutY="238.0" onMouseClicked="#usePower" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../../../resources/images/YES.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Player_1_Time_no" fitHeight="35.0" fitWidth="40.0" layoutX="88.0" layoutY="238.0" onMouseClicked="#rejectPower" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../../../resources/images/NO.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Player_1_Arcane_yes" fitHeight="35.0" fitWidth="40.0" layoutX="32.0" layoutY="133.0" onMouseClicked="#usePower" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../../../resources/images/YES.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Player_1_Arcane_no" fitHeight="35.0" fitWidth="40.0" layoutX="88.0" layoutY="133.0" onMouseClicked="#rejectPower" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../../../resources/images/NO.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Player_2_Time_yes" fitHeight="35.0" fitWidth="40.0" layoutX="711.0" layoutY="238.0" onMouseClicked="#usePower" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../../../resources/images/YES.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Player_2_Time_no" fitHeight="35.0" fitWidth="40.0" layoutX="772.0" layoutY="238.0" onMouseClicked="#rejectPower" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../../../resources/images/NO.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Player_2_Arcane_yes" fitHeight="35.0" fitWidth="40.0" layoutX="711.0" layoutY="136.0" onMouseClicked="#usePower" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../../../resources/images/YES.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="Player_2_Arcane_no" fitHeight="35.0" fitWidth="40.0" layoutX="772.0" layoutY="138.0" onMouseClicked="#rejectPower" onMouseDragged="#enteredObject" onMouseEntered="#exitedObject" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../../../resources/images/NO.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Button fx:id="skipButton" layoutX="381.0" layoutY="628.0" mnemonicParsing="false" onAction="#skipsth" opacity="0.9" prefHeight="53.0" prefWidth="138.0" text="SkipSomething" />
+      <ImageView fx:id="White_Perma" fitHeight="42.0" fitWidth="55.0" layoutX="271.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/DiceImages/WHITE1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Green_Perma" fitHeight="42.0" fitWidth="55.0" layoutX="560.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/DiceImages/WHITE1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

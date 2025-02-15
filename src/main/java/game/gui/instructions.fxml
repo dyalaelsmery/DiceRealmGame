@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.Instruction1Controller">
+   <children>
+      <ImageView fx:id="back" fitHeight="700.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/FirstHelp.jpeg" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="96.0" layoutY="190.0" prefHeight="304.0" prefWidth="246.0" text="Two wizards immerse themselves in the mystical world of Eldoria with one primary goal: to become the most powerful wizard by conquering the elemental realms and collecting the Elemental Crests. As wizards, players must utilize their magical abilities, strategic wit, and cunning tactics to defeat the elemental creatures guarding the realms and" textFill="#a01bac" wrapText="true">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="187.0" layoutY="531.0" mnemonicParsing="false" onAction="#next" prefHeight="32.0" prefWidth="89.0" text="Next" />
+   </children>
+</AnchorPane>

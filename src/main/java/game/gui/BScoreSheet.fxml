@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.BScoreController">
+   <children>
+      <ImageView fx:id="background" fitHeight="700.0" fitWidth="260.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/scoreback.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="theScoreSheet" fitHeight="253.0" fitWidth="256.0" layoutX="4.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/blueScoreSheet.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="playerName" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" prefHeight="22.0" prefWidth="257.0" text="Ahmed Amr's Scoresheet" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="red" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="20.0" layoutX="40.0" layoutY="36.0" onMouseClicked="#switchScoreScene" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="20.0" layoutX="120.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" width="20.0">
+         <effect>
+            <ColorAdjust brightness="-0.65" />
+         </effect></Rectangle>
+      <Rectangle fx:id="magenta" arcHeight="5.0" arcWidth="5.0" fill="#ff1fbe" height="20.0" layoutX="160.0" layoutY="36.0" onMouseClicked="#switchScoreScene" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="green" arcHeight="5.0" arcWidth="5.0" fill="#31cc06" height="20.0" layoutX="80.0" layoutY="36.0" onMouseClicked="#switchScoreScene" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="yellow" arcHeight="5.0" arcWidth="5.0" fill="#d4ff1f" height="20.0" layoutX="200.0" layoutY="36.0" onMouseClicked="#switchScoreScene" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Label fx:id="S1" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="148.0" text="6" textAlignment="CENTER" />
+      <Label fx:id="S2" alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="148.0" text="6" textAlignment="CENTER" />
+      <Label fx:id="S3" alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="148.0" text="6" textAlignment="CENTER" />
+      <Label fx:id="S4" alignment="CENTER" contentDisplay="CENTER" layoutX="95.0" layoutY="148.0" text="6" textAlignment="CENTER" />
+      <Label fx:id="S5" alignment="CENTER" contentDisplay="CENTER" layoutX="117.0" layoutY="148.0" text="6" textAlignment="CENTER" />
+      <Label fx:id="S6" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="148.0" text="6" textAlignment="CENTER" />
+      <Label fx:id="S7" alignment="CENTER" contentDisplay="CENTER" layoutX="158.0" layoutY="148.0" text="6" textAlignment="CENTER" />
+      <Label fx:id="S8" alignment="CENTER" contentDisplay="CENTER" layoutX="178.0" layoutY="148.0" text="6" textAlignment="CENTER" />
+      <Label fx:id="S9" alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="148.0" text="6" textAlignment="CENTER" />
+      <Label fx:id="S10" alignment="CENTER" contentDisplay="CENTER" layoutX="220.0" layoutY="148.0" text="6" textAlignment="CENTER" />
+      <Label fx:id="S11" alignment="CENTER" contentDisplay="CENTER" layoutX="241.0" layoutY="148.0" text="6" textAlignment="CENTER" />
+      <ImageView fx:id="R1" fitHeight="20.0" fitWidth="20.0" layoutX="28.0" layoutY="247.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/yellowBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="R2" fitHeight="20.0" fitWidth="20.0" layoutX="49.0" layoutY="247.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/yellowBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="R3" fitHeight="20.0" fitWidth="20.0" layoutX="70.0" layoutY="247.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/yellowBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="R4" fitHeight="20.0" fitWidth="20.0" layoutX="91.0" layoutY="247.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/yellowBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="R5" fitHeight="20.0" fitWidth="20.0" layoutX="112.0" layoutY="247.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/yellowBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="R6" fitHeight="20.0" fitWidth="20.0" layoutX="133.0" layoutY="247.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/yellowBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="R7" fitHeight="20.0" fitWidth="20.0" layoutX="154.0" layoutY="247.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/yellowBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="R8" fitHeight="20.0" fitWidth="20.0" layoutX="175.0" layoutY="247.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/yellowBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="R9" fitHeight="20.0" fitWidth="20.0" layoutX="196.0" layoutY="247.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/yellowBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="R10" fitHeight="20.0" fitWidth="20.0" layoutX="217.0" layoutY="247.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/yellowBackground.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="R11" fitHeight="20.0" fitWidth="20.0" layoutX="238.0" layoutY="247.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/yellowBackground.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="redScore" layoutX="4.0" layoutY="343.0" prefHeight="18.0" prefWidth="250.0" text="Red Realm Score:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="greenScore" layoutX="4.0" layoutY="364.0" prefHeight="18.0" prefWidth="250.0" text="Green Realm Score:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="blueScore" layoutX="4.0" layoutY="382.0" prefHeight="18.0" prefWidth="250.0" text="Blue Realm Score:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="magentaScore" layoutX="4.0" layoutY="406.0" prefHeight="18.0" prefWidth="250.0" text="Magenta Realm Score:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="yellowScore" layoutX="4.0" layoutY="430.0" prefHeight="18.0" prefWidth="250.0" text="Yellow Realm Score:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="totalScore" layoutX="4.0" layoutY="454.0" prefHeight="18.0" prefWidth="250.0" text="Total Score:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fx:id="ab1" fitHeight="30.0" fitWidth="29.0" layoutX="25.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/ArcaneBoost.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ab2" fitHeight="30.0" fitWidth="29.0" layoutX="55.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/ArcaneBoost.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ab3" fitHeight="30.0" fitWidth="29.0" layoutX="85.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/ArcaneBoost.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ab4" fitHeight="30.0" fitWidth="29.0" layoutX="115.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/ArcaneBoost.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ab5" fitHeight="30.0" fitWidth="29.0" layoutX="145.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/ArcaneBoost.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ab6" fitHeight="30.0" fitWidth="29.0" layoutX="175.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/ArcaneBoost.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ab7" fitHeight="30.0" fitWidth="29.0" layoutX="205.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/ArcaneBoost.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tw1" fitHeight="30.0" fitWidth="29.0" layoutX="25.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tw2" fitHeight="30.0" fitWidth="29.0" layoutX="55.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tw3" fitHeight="30.0" fitWidth="29.0" layoutX="85.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tw4" fitHeight="30.0" fitWidth="29.0" layoutX="115.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tw5" fitHeight="30.0" fitWidth="29.0" layoutX="145.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tw6" fitHeight="30.0" fitWidth="29.0" layoutX="175.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="tw7" fitHeight="30.0" fitWidth="29.0" layoutX="205.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="EC" fitHeight="30.0" fitWidth="29.0" layoutX="25.0" layoutY="572.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="ECLabel" layoutX="61.0" layoutY="576.0" prefHeight="20.0" prefWidth="36.0" text="x0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="604.0" prefHeight="27.0" prefWidth="140.0" text="Round Rewards:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="RR1" fitHeight="30.0" fitWidth="29.0" layoutX="8.0" layoutY="631.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RR2" fitHeight="30.0" fitWidth="29.0" layoutX="49.0" layoutY="631.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RR3" fitHeight="30.0" fitWidth="29.0" layoutX="90.0" layoutY="631.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RR4" fitHeight="30.0" fitWidth="29.0" layoutX="132.0" layoutY="631.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RR5" fitHeight="30.0" fitWidth="29.0" layoutX="179.0" layoutY="631.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RR6" fitHeight="30.0" fitWidth="29.0" layoutX="224.0" layoutY="631.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/TimeWarp.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="19.0" layoutY="658.0" text="1" />
+      <Label layoutX="59.0" layoutY="658.0" text="2" />
+      <Label layoutX="100.0" layoutY="658.0" text="3" />
+      <Label layoutX="142.0" layoutY="657.0" text="4" />
+      <Label layoutX="188.0" layoutY="659.0" text="5" />
+      <Label layoutX="234.0" layoutY="659.0" text="6" />
+   </children>
+</AnchorPane>

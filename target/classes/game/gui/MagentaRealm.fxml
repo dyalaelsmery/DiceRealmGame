@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.MagentaRealmController">
+   <children>
+      <ImageView fx:id="back" fitHeight="700.0" fitWidth="900.0" onMouseClicked="#attackPhoenix" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/PhoenixImg.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="remainingAttack" layoutX="14.0" layoutY="14.0" text="Remaining Health: 11" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="minimumAttack" layoutX="14.0" layoutY="49.0" text="Minumum Attack: 1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="realmScore" layoutX="386.0" layoutY="14.0" text="RealmScore: 0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerName" layoutX="675.0" layoutY="14.0" text="Player: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="270.0" layoutY="44.0" prefHeight="69.0" prefWidth="421.0" style="-fx-font-size: 25;" text="Press anywhere to attack the pheonix" textAlignment="CENTER" textFill="WHITE" />
+   </children>
+</AnchorPane>

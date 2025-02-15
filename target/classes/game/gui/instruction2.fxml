@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.Instruction2Controller">
+   <children>
+      <ImageView fx:id="back" fitHeight="700.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/SecondHelp.jpeg" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="502.0" layoutY="318.0" prefHeight="202.0" prefWidth="313.0" text="claim the Elemental Crests as symbols of their mastery over the elements. By subduing these formidable guardians and accumulating points, players strive to outmaneuver their opponents and emerge victorious in their quest for dominance over Eldoria. Let the quest begin!" textFill="#158475" wrapText="true">
+         <font>
+            <Font name="Bookman Old Style" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="662.0" layoutY="561.0" mnemonicParsing="false" onAction="#end" prefHeight="38.0" prefWidth="106.0" text="Main Menu" />
+      <Button layoutX="539.0" layoutY="561.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="106.0" text="Previous" />
+   </children>
+</AnchorPane>

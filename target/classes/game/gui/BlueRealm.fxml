@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.BlueRealmController">
+   <children>
+      <ImageView fx:id="creature2" fitHeight="700.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/Hydra6.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="creature1" fitHeight="700.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/Hydra5.jpg" />
+         </image>
+      </ImageView>
+      <ImageView id="head4" fx:id="head4" fitHeight="92.0" fitWidth="89.0" layoutX="115.0" layoutY="425.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/BlueButton.png" />
+         </image>
+      </ImageView>
+      <ImageView id="head5" fx:id="head5" fitHeight="92.0" fitWidth="89.0" layoutX="410.0" layoutY="535.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/BlueButton.png" />
+         </image>
+      </ImageView>
+      <ImageView id="head6" fx:id="head6" fitHeight="92.0" fitWidth="89.0" layoutX="690.0" layoutY="431.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/BlueButton.png" />
+         </image>
+      </ImageView>
+      <ImageView id="head2" fx:id="head2" fitHeight="92.0" fitWidth="89.0" layoutX="410.0" layoutY="11.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/BlueButton.png" />
+         </image>
+      </ImageView>
+      <ImageView id="head1" fx:id="head1" fitHeight="92.0" fitWidth="89.0" layoutX="115.0" layoutY="60.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/BlueButton.png" />
+         </image>
+      </ImageView>
+      <ImageView id="head3" fx:id="head3" fitHeight="92.0" fitWidth="89.0" layoutX="690.0" layoutY="60.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/BlueButton.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="score" layoutX="19.0" layoutY="1.0" prefHeight="48.0" prefWidth="136.0" style="-fx-font-size: 25;" text="Score: 0" textFill="WHITE" />
+      <Label fx:id="playerName" layoutX="675.0" layoutY="1.0" prefHeight="48.0" prefWidth="193.0" style="-fx-font-size: 25;" text="Player: " textFill="WHITE" />
+   </children>
+</AnchorPane>

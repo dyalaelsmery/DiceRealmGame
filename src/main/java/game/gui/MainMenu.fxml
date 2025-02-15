@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.MainMenuController">
+   <children>
+      <ImageView fx:id="background" fitHeight="700.0" fitWidth="900.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/MainMenu.jpeg" />
+         </image></ImageView>
+      <ImageView fx:id="multi" fitHeight="53.0" fitWidth="253.0" layoutX="323.0" layoutY="542.0" onMouseClicked="#startGame" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/MultiplayerButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="single" fitHeight="51.0" fitWidth="253.0" layoutX="324.0" layoutY="603.0" onMouseClicked="#startGameAI" onMouseEntered="#enteredObject" onMouseExited="#exitedObject" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/SingleplayerButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="help" fitHeight="84.0" fitWidth="64.0" layoutX="835.0" layoutY="3.0" onMouseClicked="#openHelp" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/Question.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

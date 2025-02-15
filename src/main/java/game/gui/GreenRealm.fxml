@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.gui.GreenRealmController">
+   <children>
+      <ImageView fx:id="greenRealm" fitHeight="700.0" fitWidth="901.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../resources/images/greenRealm.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gaia" fitHeight="367.0" fitWidth="325.0" layoutX="254.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resources/images/Gaia.png" />
+         </image>
+      </ImageView>
+      <StackPane id="stack11" fx:id="stack11" layoutX="178.0" layoutY="48.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" opacity="0.5" prefHeight="115.0" prefWidth="97.0">
+         <children>
+            <ImageView id="life12" fx:id="life12" fitHeight="158.0" fitWidth="154.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../resources/images/GaiaHealth.png" />
+               </image>
+            </ImageView>
+            <Label id="life12" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" style="-fx-font-size: 30;" text="12" textFill="#ffd000" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </StackPane>
+      <StackPane id="stack4" fx:id="stack4" layoutX="583.0" layoutY="310.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" opacity="0.5" prefHeight="191.0" prefWidth="223.0">
+         <children>
+            <ImageView id="life5" fx:id="life5" fitHeight="158.0" fitWidth="154.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../resources/images/GaiaHealth.png" />
+               </image>
+            </ImageView>
+            <Label id="life5" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" style="-fx-font-size: 30;" text="5" textFill="#ffd000" />
+         </children>
+      </StackPane>
+      <StackPane id="stack2" fx:id="stack2" layoutX="498.0" layoutY="67.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" opacity="0.5" prefHeight="73.0" prefWidth="76.0">
+         <children>
+            <ImageView id="life3" fx:id="life3" fitHeight="158.0" fitWidth="154.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../resources/images/GaiaHealth.png" />
+               </image>
+            </ImageView>
+            <Label id="life3" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" style="-fx-font-size: 30;" text="3" textFill="#ffd000" />
+         </children>
+      </StackPane>
+      <StackPane id="stack7" fx:id="stack7" layoutX="237.0" layoutY="560.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" opacity="0.5" prefHeight="134.0" prefWidth="155.0">
+         <children>
+            <ImageView id="life8" fx:id="life8" fitHeight="158.0" fitWidth="154.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../resources/images/GaiaHealth.png" />
+               </image>
+            </ImageView>
+            <Label id="life8" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" style="-fx-font-size: 30;" text="8" textFill="#ffd000" />
+         </children>
+      </StackPane>
+      <StackPane id="stack6" fx:id="stack6" layoutX="417.0" layoutY="560.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" opacity="0.5" prefHeight="76.0" prefWidth="93.0">
+         <children>
+            <ImageView id="life7" fx:id="life7" fitHeight="158.0" fitWidth="154.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../resources/images/GaiaHealth.png" />
+               </image>
+            </ImageView>
+            <Label id="life7" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" style="-fx-font-size: 30;" text="7" textFill="#ffd000" />
+         </children>
+      </StackPane>
+      <StackPane id="stack1" fx:id="stack1" layoutX="339.0" layoutY="23.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" opacity="0.5" prefHeight="52.0" prefWidth="65.0">
+         <children>
+            <ImageView id="life2" fx:id="life2" fitHeight="158.0" fitWidth="154.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../resources/images/GaiaHealth.png" />
+               </image>
+            </ImageView>
+            <Label id="life2" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" style="-fx-font-size: 30;" text="2" textFill="#ffd000" />
+         </children>
+      </StackPane>
+      <StackPane id="stack3" fx:id="stack3" layoutX="605.0" layoutY="180.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" opacity="0.5" prefHeight="123.0" prefWidth="95.0">
+         <children>
+            <ImageView id="life4" fx:id="life4" fitHeight="158.0" fitWidth="154.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../resources/images/GaiaHealth.png" />
+               </image>
+            </ImageView>
+            <Label id="life4" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" style="-fx-font-size: 30;" text="4" textFill="#ffd000" />
+         </children>
+      </StackPane>
+      <StackPane id="stack10" fx:id="stack10" layoutX="63.0" layoutY="169.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" opacity="0.5" prefHeight="51.0" prefWidth="125.0">
+         <children>
+            <ImageView id="life11" fx:id="life11" fitHeight="158.0" fitWidth="154.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../resources/images/GaiaHealth.png" />
+               </image>
+            </ImageView>
+            <Label id="life11" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" style="-fx-font-size: 30;" text="11" textFill="#ffd000" />
+         </children>
+      </StackPane>
+      <StackPane id="stack9" fx:id="stack9" layoutX="45.0" layoutY="310.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" opacity="0.5" prefHeight="84.0" prefWidth="115.0">
+         <children>
+            <ImageView id="life10" fx:id="life10" fitHeight="158.0" fitWidth="154.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../resources/images/GaiaHealth.png" />
+               </image>
+            </ImageView>
+            <Label id="life10" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" style="-fx-font-size: 30;" text="10" textFill="#ffd000" />
+         </children>
+      </StackPane>
+      <StackPane id="stack5" fx:id="stack5" layoutX="530.0" layoutY="450.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" opacity="0.5" prefHeight="191.0" prefWidth="223.0">
+         <children>
+            <ImageView id="life6" fx:id="life6" fitHeight="158.0" fitWidth="154.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../resources/images/GaiaHealth.png" />
+               </image>
+            </ImageView>
+            <Label id="life6" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" style="-fx-font-size: 30;" text="6" textFill="#ffd000" />
+         </children>
+      </StackPane>
+      <StackPane id="stack8" fx:id="stack8" layoutX="98.0" layoutY="458.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" opacity="0.5" prefHeight="28.0" prefWidth="128.0">
+         <children>
+            <ImageView id="life9" fx:id="life9" fitHeight="158.0" fitWidth="154.0" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../resources/images/GaiaHealth.png" />
+               </image>
+            </ImageView>
+            <Label id="life9" onMouseClicked="#attack" onMouseEntered="#hover" onMouseExited="#hoverExit" style="-fx-font-size: 30;" text="9" textFill="#ffd000" />
+         </children>
+      </StackPane>
+      <Label fx:id="score" layoutX="44.0" layoutY="38.0" prefHeight="33.0" prefWidth="103.0" style="-fx-font-size: 25;" text="Score:" textFill="WHITE" />
+      <Label fx:id="playerName" layoutX="621.0" layoutY="38.0" prefHeight="33.0" prefWidth="191.0" style="-fx-font-size: 25;" text="Player:" textFill="WHITE" />
+   </children>
+</AnchorPane>
